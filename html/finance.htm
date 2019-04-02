@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="de">
+	<head>
+		<title>BMW-Management Cockpit</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="../pictures/cropped-BMW-favicon-300x300.png">
+		
+		<!-- Bootstrap implementation -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="../stylesheet/style.css">
+		
+		<script>
+		   $(function(){
+			  $(".myPopover").popover();
+		   });
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-auto"><img src="../pictures/Logo.png" alt="BMW-Logo" height="75px"></div><div class="col" id="Seitentitel"><h1>BMW-Management Cockpit</h1></div><div class="col-auto" id="Knopf"><button type="button" class="btn btn-primary">Log-Out</button></div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<!-- Navigation mit Bootstrap -->
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link" href='../index.html'>Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href='finance.htm'>Finanzen</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href='production.htm'>Produktion</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href='industry_news.htm'>Branchennews</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href='bmw_news.htm'>BMW-News</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">[mat]</div>
+			</div>
+			<div class="row">
+				<div class="col" id="Fuss"><button type="button" class="btn btn-primary myPopover" data-container="body" data-placement="top" data-toggle="popover" data-content="Telefon: +41 55 442 12 34">Support</button></div>
+			</div>
+		</div>
+				
+	</body>
+</html>
